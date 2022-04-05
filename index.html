@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<style>
+    table,td{
+        border: 1px black solid;
+        text-align: center;
+    }
+</style>
+<script>
+   function myfunc()
+    {
+    n=document.getElementById("txt").value;
+    var number="";
+    number+="<table>"
+        number+="<tr>";
+        number+="<th>Values from 1 to n</th>";
+        number+="</tr>";
+        for(let i=1;i<=n;i++)
+        {
+            number+="<tr>";
+            number+="<td>"+i+"</td>";
+            number+="</tr>";
+        }       
+    number+="</table>";
+    document.getElementById("number").innerHTML=number;
+    }
+</script>
+<body style="text-align:center">
+<h4>
+    Insert the value of N:
+</h4>
+<input type="text" id="txt" placeholder="n">
+<button onclick="func()">click here</button>
+<br><br>
+    <div id="d">
+    </div>
+        <div style="text-align: center;">
+    <script style="text-align: center;">
+        function func()
+         {
+         n=document.getElementById("txt").value;
+         var num="";
+         num+="<table>"
+             num+="<tr>";
+             num+="<th>Values</th>";
+             num+="</tr>";
+             for(let i=1;i<=n;i++)
+             {
+                 num+="<tr>";
+                 num+="<td>"+i+"</td>";
+                 num+="</tr>";
+             }    
+         num+="</table>";
+         document.getElementById("d").innerHTML=num;
+         }
+     </script>
+    </div>
+</body>
+</html>
+
+
+
+
